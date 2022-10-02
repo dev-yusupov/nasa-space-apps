@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static '/assets/images/firex-aq_logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static '/assets/css/about.css' %}">
+    <title>About FIREX-AQ</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <ul class="menu">
+                        <li class="menu-list">
+                            <a href="{% url 'about' %}" class="menu-link">About</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="{% url 'scoring' %}" class="menu-link">Scoring</a>
+                        </li>
+                    </ul>
+                    <a href="{% url 'main' %}" class="logo">
+                        <img src="{% static 'assets/images/firex-aq_logo.png'%}" alt="" class="logo-image">
+                    </a>
+                    <ul class="menu">
+                        <li class="menu-list">
+                            <a href="{% url 'weather' %}" class="menu-link">Weather</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="dvelopers.html" class="menu-link">Developers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="banner-title">
+                        About FIREX-AQ
+                    </h1>
+                    <p class="banner-text">
+                        Here you can find more information about FIREX-AQ
+                    </p>
+                    <a href="#" download="#" class="banner-btn">Download information as PDF file</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr class="line">
+
+    <section class="info-section">
+        <div class="container">
+            <div class="info-content">
+                <div class="info-banner">
+                    <img src="{% static './assets/images/firex-aq.png '%}" alt="" class="info-banner-img">
+                </div>
+                <div class="info-text">
+                    <p>Fire Influence on Regional to Global Environments and Air Quality (FIREX-AQ), a joint venture between NOAA and NASA, is a comprehensive wildfire smoke investigation and the latest in a long history of collaborative research between the two federal science agencies.
+
+                        Mission planning for FIREX-AQ is complex: hundreds of instruments and scientists from six federal agencies, 22 academic institutions, two foreign governments, and numerous private-sector companies will collaborate in a complex logistical operation that launches in late May.
+                        
+                        A major task is the five-week process of installing scientific instruments in the NASA DC-8 flying laboratory in Palmdale, CA.
+                        
+                        Starting June 24, three days of flights for NASA's Student Airborne Research Program will give rising senior undergraduate students hands-on experience in all aspects of an airborne research campaign on the DC-8.
+                        
+                        Several days of final preparation in mid-July precede a July 22 arrival at the Idaho Air National Guard base at Gowen Field in Boise, which is the base for studies of wildfire smoke.
+                        
+                        Two smaller research aircraft, NOAA Twin Otters, will join the DC-8 in Boise in late July. These aircraft will investigate fire weather conditions and nighttime smoke chemistry at the regional and local scale in the northwest U.S.
+                        
+                        The NASA ER-2 high-altitude research aircraft will carry satellite simulator instruments in its belly. The ER-2 will reach ~70,000 feet altitude, and will fly from its base in California in a suburb of Los Angeles, to coordinate with the DC-8.
+                        
+                        Ground based operations in Idaho and across the northwest U.S., including mobile laboratories (instrumented vehicles), will provide continuous, surface based measurements to complement the periodic airborne data from the DC-8 and the Twin Otters. The mobile laboratories will be able to measure the smoke where it matters most to health - at lower altitudes than can't be easily sampled with aircraft. Ground-based remote sensing instruments will help make connections to climate and optics.
+                        
+                        On August 19, the NASA DC-8 flies to Salina, KS to focus on smoke from agricultural fires across the southeastern U.S. that concludes September 5. Large western fires could still be sampled during this period if deemed appropriate by the science team.
+                        
+                        The final phase of the mission will focus on smoke from a U.S. Forest Service prescribed burn planned for October or November. This rare opportunity is particularly exciting for scientists because the burn area will be carefully mapped to describe fuel types and amounts before and after the burn. This will permit monitoring of smoke with the DC-8 as well with many other instruments deployed by the Forest Service and other partners from carefully mapped fuels in a realistic wildfire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="first-item">
+                    <a href="index.html" class="footer-logo">
+                        <img src="{% static 'assets/images/firex-aq_logo.png' %}" alt="">
+                        <h1>FIREX-AQ</h1>
+                    </a>
+                </div>
+                <div class="second-item">
+                    <ul class="social-media-menu">
+                        <li class="social-menu-list">
+                            <a href="#" class="social-menu-link">
+                                <img src="https://img.icons8.com/fluency/344/instagram-new.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-menu-list">
+                            <a href="#" class="social-menu-link">
+                                <img src="https://img.icons8.com/fluency/344/facebook-new.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-menu-list">
+                            <a href="#" class="social-menu-link">
+                                <img src="https://img.icons8.com/color/344/twitter.png" alt="">
+                            </a>
+                        </li>
+                        <li class="social-menu-list">
+                            <a href="#" class="social-menu-link">
+                                <img src="https://img.icons8.com/color/344/youtube-play.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

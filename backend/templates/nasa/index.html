@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/images/firex-aq_logo.ico' %}">  
+    <link rel="stylesheet" href="{% static 'assets/css/weather.css' %}">
+    <title>FIREX-AQ</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <ul class="menu">
+                        <li class="menu-list">
+                            <a href="{% url 'about' %}" class="menu-link">About</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="{% url 'scoring' %}" class="menu-link">Scoring</a>
+                        </li>
+                    </ul>
+                    <a href="{% url 'main' %}" class="logo">
+                        <img src="{% static 'assets/images/firex-aq_logo.png' %}" alt="" class="logo-image">
+                    </a>
+                    <ul class="menu">
+                        <li class="menu-list">
+                            <a href="{% url 'weather' %}" class="menu-link">Weather</a>
+                        </li>
+                        <li class="menu-list">
+                            <a href="{% url 'developers' %}" class="menu-link">Science of Smoke</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="banner-title">
+                        FIREX-AQ
+                    </h1>
+                    <p class="banner-text">
+                        Investigating smoke from wildfires and biomass burning
+                    </p>
+                    <a href="{% url 'about' %}" class="banner-btn">About FIREX-AQ</a>
+                    <a href="{% url 'scoring' %}" class="banner-btn">Scoring</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="{% static 'assets/js/weather.js'%}"></script>
+</body>
+</html>

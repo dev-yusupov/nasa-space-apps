@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #333;
+}
+
+/* global styles */
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.section-title{
+    text-align: center;
+    color: #eee;
+    font-weight: 600;
+    font-size: 48px;
+    padding:20px;
+}
+
+.container{
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+/* header styles */
+
+.header{
+    min-width: 100vh;
+    background-image: url(../images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background-color: rgb(36, 35, 35);
+    width: 100%;
+}
+
+.navbar-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.logo-image{
+    width: 50px;
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-list{
+    margin: 0 35px 0 35px;
+}
+
+.menu-link{
+    color: #a19f9f;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s ease-in;
+}
+
+.menu-link:hover{
+    color: #eee;
+}
+
+.banner{
+    color: #fff;
+    text-align: center;
+} 
+
+.banner-content{
+    padding: 180px;
+}
+
+.banner-title{
+    font-size: 100px;
+}
+
+.banner-text{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.banner-btn{
+    color: #333;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #eee;
+    font-weight: 600;
+    transition: all 0.3s ease-in;
+}
+
+.banner-btn:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+.forecast-section{
+    background-image: url(../images/fecture-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.foresast-content{
+    margin: 80px 0 50px 0;
+    min-width: 100vh;
+}
+
+.h1__title {
+    color:white;
+}
