@@ -49,4 +49,4 @@ def weather(request):
     return render(request, "nasa/weatherapp.html")
 
 def developers(request):
-    return render(request, "nasa/dvelopers.html")
+    return render(request, "nasa/developers.html")
